@@ -10,7 +10,7 @@ import SingleProduct from './pages/SingleProduct';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import StorePolicy from './pages/StorePolicy';
-import Cart from './pages/cart';
+import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
 
 function App() {
