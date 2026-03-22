@@ -1,0 +1,270 @@
+:root {
+  --bg: #f5f6f8;
+  --surface: #ffffff;
+  --text: #1f2328;     /* dark text for light mode */
+  --muted: #69707a;
+  --border: #e5e7eb;
+  --link: #0d6efd;     /* add: link color in light */
+  --link-hover: #0a58ca;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  transition: background 200ms ease, color 200ms ease;
+}
+
+/* Dark theme */
+body.dark {
+  --bg: #0f1115;
+  --surface: #171a21;
+  --text: #e6edf3;     /* light text for dark mode */
+  --muted: #9aa4af;
+  --border: #2a2f3a;
+  --link: #5aa2ff;     /* add: link color in dark */
+  --link-hover: #8bbdff;
+}
+
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+/* Product image zoom on hover */
+.product-img-wrapper {
+    overflow: hidden;
+    position: relative;
+}
+
+.product-img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+/* Zoom effect like Shopee/Lazada */
+.product-img-wrapper:hover .product-img {
+    transform: scale(1.1);
+}
+
+/* Sale badge */
+.sale-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: red;
+    color: white;
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+
+@media (max-width: 991.98px) {
+  body {
+    padding-bottom: 70px;
+  }
+}
+
+/* Default (Desktop) */
+.store-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.store-subtitle {
+  font-size: 1.2rem;
+}
+
+/* Mobile View */
+@media (max-width: 991.98px) {
+  .store-title {
+    font-size: 1.5rem;
+  }
+
+  .store-subtitle {
+    font-size: 0.9rem;
+  }
+}
+
+/* Smooth Fade-Up Animation */
+.fade-in {
+  animation: fadeIn 0.6s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== THEME VARIABLES ===== */
+:root {
+  --bg: #f5f6f8;
+  --surface: #ffffff;
+  --text: #1f2328;
+  --muted: #69707a;
+  --primary: #0d6efd; /* Bootstrap primary */
+  --border: #e5e7eb;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* cards / common surfaces */
+.card,
+.navbar,
+.footer,
+aside .card {
+  background: var(--surface);
+  color: var(--text);
+  border-color: var(--border);
+}
+
+/* Small helper for muted text */
+.text-muted,
+.form-text {
+  color: var(--muted) !important;
+}
+
+/* ===== DARK THEME ===== */
+body.dark {
+  --bg: #0f1115;
+  --surface: #171a21;
+  --text: #e6edf3;
+  --muted: #9aa4af;
+  --primary: #5aa2ff;
+  --border: #2a2f3a;
+}
+
+body.dark .navbar,
+body.dark .card,
+body.dark aside .card,
+body.dark .footer {
+  background: var(--surface) !important;
+  color: var(--text) !important;
+  border-color: var(--border) !important;
+}
+
+body.dark .form-control,
+body.dark .form-select {
+  background: #0f1115;
+  color: var(--text);
+  border-color: var(--border);
+}
+
+body.dark .form-control::placeholder {
+  color: #7d8894;
+}
+
+body.dark .border-top,
+body.dark .border-bottom,
+body.dark .border {
+  border-color: var(--border) !important;
+}
+
+/* Optional: tweak bottom mobile nav if you use it */
+body.dark .navbar.fixed-bottom {
+  background: var(--surface) !important;
+  border-top-color: var(--border) !important;
+}
+
+/* Buttons keep Bootstrap look; primary pops on dark */
+
+
+/* Skeleton loading blocks */
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    rgba(200, 200, 200, 0.15) 25%,
+    rgba(200, 200, 200, 0.3) 37%,
+    rgba(200, 200, 200, 0.15) 63%
+  );
+  background-size: 400% 100%;
+  animation: skeleton-loading 1.4s ease infinite;
+  border-radius: 6px;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+.skeleton-card {
+  height: 280px;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+
+.navbar, .card, aside .card, footer {
+  background: var(--surface);
+  color: var(--text);
+  border-color: var(--border);
+}
+
+.text-muted, .form-text {
+  color: var(--muted) !important;
+}
+
+body.dark .navbar, 
+body.dark .card, 
+body.dark aside .card, 
+body.dark footer {
+  background: var(--surface) !important;
+  color: var(--text) !important;
+  border-color: var(--border) !important;
+}
+
+body.dark .form-control,
+body.dark .form-select {
+  background: #0f1115;
+  color: var(--text);
+  border-color: var(--border);
+}
