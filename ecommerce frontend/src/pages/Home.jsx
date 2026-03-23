@@ -1,7 +1,7 @@
 
 import { useEffect, useState } from "react";
 import ProductCard from "../components/ProductCard";
-import banner from "../assets/banner.webp";
+import banner from "../assets/Banner.webp";
 import banner2 from "../assets/banner2.jpg";
 import banner3 from "../assets/banner3.png";
 
