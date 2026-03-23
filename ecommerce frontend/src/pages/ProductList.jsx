@@ -1,11 +1,11 @@
 import { useEffect, useMemo, useState } from 'react';
-
+import { imgUrl } from '../utils/imgUrl';
 import ProductCard from '../components/ProductCard';
 import Sidebar from '../components/Sidebar';
 
 // If you use a Vite proxy, you can switch to '' and call /api/...
 const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:5000';
-
+<img src={imgUrl(product.image)} alt={product.name} />
 // normalize helper used in comparisons
 const norm = (s) =>
   String(s ?? '')
