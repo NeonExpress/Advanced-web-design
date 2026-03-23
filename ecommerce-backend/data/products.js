@@ -6,7 +6,7 @@ const products = [
         price: 1499,
         discount: 25,
         rating: 4,
-        image:"/src/assets/product1.webp"
+        image:"../products/product1.webp"
     },
     {
         name: "Arknights Hoshiguma Figurine",
@@ -15,7 +15,7 @@ const products = [
         price: 799,
         discount: 20,
         rating: 5,
-        image:"/src/assets/Product2.webp"
+        image:"../products/Product2.webp"
     },
     {
         name: "Arknights Kal'tsit Figurine",
@@ -24,7 +24,7 @@ const products = [
         price: 799,
         discount: 20,
         rating: 5,
-        image:"/src/assets/Product3.jpg"
+        image:"../products/Product3.jpg"
     },
     {
         name: "Arknights clothing",
@@ -33,7 +33,7 @@ const products = [
         price: 799,
         discount: 20,
         rating: 5,
-        image:"/src/assets/Product4.webp"
+        image:"../products/Product4.webp"
     },
     {
         name: "Arknights Siege Figurine",
@@ -42,7 +42,7 @@ const products = [
         price: 799,
         discount: 20,
         rating: 5,
-        image:"/src/assets/Product5.webp"
+        image:"../products/Product5.webp"
     },
     {
         name: "Arknights Nian Figurine",
@@ -51,7 +51,7 @@ const products = [
         price: 799,
         discount: 20,
         rating: 5,
-        image:"/src/assets/Product6.webp"
+        image:"../products/Product6.webp"
     },
     {
         name: "Arknights 3-in-1 Plushie",
@@ -60,7 +60,7 @@ const products = [
         price: 500,
         discount: 50,
         rating: 5,
-        image:"/src/assets/product7.webp"
+        image:"../products/product7.webp"
     },
     {
         name: "Arknights Shu Figurine",
@@ -69,7 +69,7 @@ const products = [
         price: 999,
         discount: 20,
         rating: 5,
-        image:"/src/assets/Product8.webp"
+        image:"../products/Product8.webp"
     },    
 ];
 

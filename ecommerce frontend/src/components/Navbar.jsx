@@ -23,7 +23,7 @@ const Navbar = () => {
           
       <Link className="navbar-brand d-flex align-items-center" to="/">
       <img 
-      src="/src/assets/Rhodes_Island.webp"      
+      src="../assets/Rhodes_Island.webp"      
       alt="Logo"
       style={{ height: "40px", width: "auto", marginRight: "8px" }}
       />

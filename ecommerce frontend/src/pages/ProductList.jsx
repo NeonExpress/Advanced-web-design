@@ -1,5 +1,4 @@
 import { useEffect, useMemo, useState } from 'react';
-
 import ProductCard from '../components/ProductCard';
 import Sidebar from '../components/Sidebar';
 
